@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+    <link rel="shortcut icon" href="imagens/icons8-símbolo-de-comida-não-vegetariana-96.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <span id="botaoMenu" class="material-symbols-rounded" onclick="exibirMenu()">menu</span>
+    <span id="botaoFechar" class="material-symbols-rounded" onclick="fecharMenu()">close</span>
+
+    <header>
+        <img class="logo" src="imagens/logo_oishi.jpg" alt="Logotipo">
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="ambiente.html">AMBIENTE</a></li>
+                <li><a href="cardapio.html">CARDÁPIO</a></li>
+                <li><a href="localizacao.html">LOCALIZAÇÃO</a></li>
+                <li><a href="reserva.html">RESERVA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="fundo-carrossel">
+            <div class="carrossel">
+                <img class="img-carrossel" src="imagens/pratos5.jpg" alt="">
+                <img class="img-carrossel" src="imagens/destaque-home.jpg" alt="">
+                <img class="img-carrossel" src="imagens/detaque-home3.jpg" alt="">
+            </div>
+        </div>
+            
+        <h1 class="h1-home">BOAS VINDAS</h1>
+        <div class="apresentacao">
+            <img class="img-1" src="imagens/ambiente3.jpg" alt="">
+        <div class="apresentacao-home">
+            <p>Olá, bem-vindo(a) ao Oishi, o restaurante japonês mais delicioso de São
+                Paulo. </p>
+                <p >Aqui você vai encontrar uma variedade de pratos típicos da culinária japonesa, preparados com
+                ingredientes frescos e de qualidade.</p>
+                Venha saborear o nosso delicioso cardápio de sushi, sashimi, tempura, yakisoba e muito mais.</p>
+            <p class="venha-nos-conhecer">Venha nos conhecer!</p>
+        </div>
+        </div>
+
+        <div class="segundo-texto-home">
+            <p>Aqui você vai desfrutar de um ambiente aconchegante e acolhedor, com um atendimento cordial e eficiente.</p>
+                <p>Temos opções para todos os gostos e ocasiões, desde um almoço rápido até um jantar romântico ou uma reunião de amigos.</p>
+                Faça já a sua reserva e venha conhecer o Oishi, o restaurante japonês que vai conquistar o seu paladar.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="paragrafo-footer">
+                <p>2023 - OISHI - TODOS OS DIREITOS SÃO RESERVADOS.</p>
+                <p>Desenvolvido por Diogo Franjosi Dias</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.carrossel').slick({
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000 
+            });
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

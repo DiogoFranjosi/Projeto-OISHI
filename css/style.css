@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #faf9f9;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.logo{
+    width: 13rem;
+    margin-bottom: 1.2rem;
+}
+
+.h1-home{
+    padding: 23px;
+}
+
+.img-1{
+    width: 20rem;
+    margin-bottom: 1.2rem;
+}
+
+.fundo-carrossel{
+    background-color: #ff5959;
+    width: 100%;
+    height: 350px;
+}
+
+.carrossel{
+    max-width: 450px;
+    max-height: 300px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.img-carrossel{
+    height: 300px;
+    width: auto;
+}
+
+#menu{
+    list-style-type: none;
+    display: none;
+}
+
+#menu li{
+    margin-bottom: 2rem;
+}
+
+#menu li a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+    padding: 9px;
+    border-radius: 9px;
+}
+
+#menu li a:hover{
+    background-color: #ff5959;
+    color: #000;
+}
+
+main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.apresentacao-home{
+    background-color: #ff5959;
+    border: solid 2px #000;
+    width: 400px;
+    height: 290px;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+}
+
+.apresentacao-home p{
+    padding: 8px;
+}
+
+.texto-apresentacao-home{
+    font-size: 0.9em;
+    margin-top: 1rem;
+}
+
+.venha-nos-conhecer{
+    font-size: 1.6em;
+    margin-top: 0.9rem;
+}
+
+.segundo-texto-home p{
+    padding: 10px;
+}
+
+.footer{
+    background-color: #000;
+    height: 85px;
+    padding: 2px;
+}
+
+.paragrafo-footer{
+    color: #faf9f9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 14px;
+    font-size: 0.8em;
+}
+
+#botaoMenu, #botaoFechar{
+    font-size: 3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+#botaoFechar{
+    display: none;
+}
+
+/* BREAKPOINT DESKTOP - PÁGINA HOME */
+
+@media(min-width:1120px){
+    #botaoFechar, #botaoMenu{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    #menu{
+        display: flex;
+    }
+
+    #menu li{
+        margin-bottom: 0px;
+        margin-left: 32px;
+    }
+
+    #menu li a:hover{
+        background-color: #ff5959;
+        color: #000;
+        transition: 0.5s;
+    }
+
+    header img{
+        margin-bottom: 0;
+    }
+
+    .fundo-carrossel{
+        background-color: #ff5959;
+        width: 100%;
+        height: 430px;
+    }
+
+    .carrossel{
+        max-width: 750px;
+        margin: 0 auto;
+       padding: 8.1rem;
+    }
+
+    .img-carrossel{
+        height: 290px;
+        
+    }
+
+    .apresentacao{
+        display: flex;
+    }
+
+    .img-1{
+        margin-right: 40px;
+        width: 500px;
+        height: 300px;
+    }
+
+    .segundo-texto-home p{
+        padding: 10px;
+    }
+}
+
+/* PÁGINA SOBRE */
+
+.h1-sobre{
+    padding: 23px;
+}
+.main-sobre p{
+    margin: 15px;
+}
+
+.main-sobre img{
+    width: 350px;
+    height: 240px;
+}
+
+.apresentacao-sobre{
+    width: 25rem;
+    background-color: #ff5959;
+    margin: 20px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.paragrafo-sobre-2{
+    background-color: #ff5959;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+/* BREAKPOINT DESKTOP - PÁGINA SOBRE */
+
+@media(min-width:1120px){
+
+    .h1-sobre{
+        margin-top: 140px;
+    }
+
+    .sobre-nos{
+        display: flex;
+    }
+
+    .img-2{
+        margin-left: 40px;
+    }
+
+    .apresentacao-sobre{
+        width: 65rem;
+        background-color: #ff5959;
+        margin: 20px;
+    }
+
+    .paragrafo-sobre-2{
+        width: 60rem;
+        text-align: left;
+}
+
+}
+
+/* PÁGINA AMBIENTE */
+
+.h1-ambiente{
+    padding: 23px;
+}
+.main-ambiente p{
+    margin: 20px;
+}
+
+.sobre-ambiente{
+    background-color: #ff5959;
+    width: 350px;
+    margin-bottom: 30px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.img-3{
+    width: 350px;
+    margin-bottom: 1.2rem;
+}
+
+.sobre-ambiente-2{
+    width: 450px;
+}
+
+.fundo-imagem-4{
+    background-color: #ff5959;
+    width: 100%;
+    height: 300px;
+}
+
+.img-4{
+    height: 300px;
+    width: auto;
+    padding: 10px;
+}
+
+/* BREAKPOINT DESKTOP - PÁGINA AMBIENTE */
+
+@media(min-width:1120px){
+    .h1-ambiente{
+        margin-top: 140px;
+    }
+
+    .inicio-ambiente{
+        display: flex;
+    }
+
+    .sobre-ambiente{
+        background-color: #ff5959;
+        width: 550px;
+        padding: 13px;
+    }
+
+    .img-3{
+        margin-left: 15rem;
+        width: 30rem;
+    }
+
+    .sobre-ambiente-2{
+        width: 60rem;
+        text-align: center;
+    }
+
+    .fundo-imagem-4{
+        background-color: #ff5959;
+        width: 100%;
+        height: 390px;
+    }
+
+    .img-4{
+        height: 370px;
+        width: auto;
+        margin-top: 10px;
+    }
+
+}
+
+/* PÁGINA CARDÁPIO */
+
+.h1-cardapio{
+    padding: 23px;
+}
+
+.paragrafo-cardapio{
+    width: 30rem;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.cardapio-geral{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardapio{
+    background-color: #ff5959;
+    width: 370px;
+    height: 535px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+}
+
+.opcoes-cardapio{
+    margin: 25px;
+}
+
+.img-cardapio-1{
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.img-cardapio-2{
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.ultima-imagem-cardapio{
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+/* BREAKPOINT DESKTOP - PÁGINA CARDÁPIO */
+
+@media(min-width:1120px){
+    .h1-cardapio{
+        margin-top: 140px;
+    }
+
+    .paragrafo-cardapio{
+        width: 70rem;
+    }
+
+    .cardapio{
+        margin-left: 40px;
+        width: 400px;
+        height: 530px;
+        margin-top: -340px;
+        text-align: left;
+    }
+
+    .cardapio-geral{
+       display: flex;
+       flex-direction: row;
+       margin-left: 20px;
+    }
+
+    .imagens-cardapio{
+        margin-top: 35px;
+        margin: 40px;
+    }
+
+    .img-cardapio-1{
+        width: 240px;
+        height: 200px;
+    }
+
+    .ultima-imagem-cardapio{
+        width: 450px;
+    }
+
+
+    .img-cardapio-2{
+        width: 250px;
+        height: 370px;
+        margin: 15px;
+    }
+}
+/* PÁGINA LOCALIZAÇÃO */
+
+.h1-localizacao{
+    padding: 23px;
+}
+
+.mapa{
+    width: 440px;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.paragrafo-localizacao{
+    background-color: #ff5959;
+    height: 70px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.paragrafo-localizacao p{
+    padding: 15px;
+}
+
+/* BREAKPOINT DESKTOP - PÁGINA LOCALIZAÇÃO */
+@media(min-width:1120px){
+    .h1-localizacao{
+        margin-top: 140px;
+    }
+    .mapa{
+        width: 880px;
+        height: 500px;
+    }
+
+    .paragrafo-localizacao p{
+        padding: 18px;
+    }
+}
+
+/* PÁGINA RESERVA */
+
+.h1-reserva{
+    padding: 23px;
+}
+
+.paragrafo-reserva{
+    background-color: #ff5959;
+    padding: 8px;
+    text-align: left;
+    border-radius: 4px;
+    width: 400px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.paragrafo-reserva, p{
+    margin:7px;
+}
+
+h2{
+    padding: 20px;
+}
+
+.formulario{
+    background-color: #ff5959;
+    width: 300px;
+    height: 255px;
+    border-radius: 30px;
+    margin-bottom: 75px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+button{
+    border-radius: 7px;
+    border: none;
+    width: 80px;
+    padding: 8px;
+    margin-left: 15px;
+    margin: 10px;
+}
+
+/* BREAKPOINT DESKTOP - PÁGINA RESERVA */
+
+@media(min-width:1120px){
+    .h1-reserva{
+        margin-top: 140px;
+    }
+
+    .formulario{
+        width: 400px;
+        height: 255px;
+    }
+}
