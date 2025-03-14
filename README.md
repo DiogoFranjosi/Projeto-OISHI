@@ -32,5 +32,9 @@ Este projeto foi desenvolvido com foco na experiência do usuário, trazendo um 
 - O projeto não tem conexão com o Banco de Dados.
 - A criação desse restaurante é fictícia.
 
+- ## Autor
+- 
+- Desenvolvido por Diogo Franjosi - Github
+
  <a href="https://instagram.com/_diogofranjosi" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
  <a href="https://www.linkedin.com/in/diogofranjosi" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
