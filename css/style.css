@@ -1,9 +1,33 @@
+/* RESET GLOBAL */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY FLEX PARA FOOTER FIXO */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* garante que ocupe toda altura da tela */
+}
+
+main {
+    flex: 1; /* ocupa o espaço disponível entre header e footer */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+/* HEADER */
 header{
     background-color: #faf9f9;
     padding: 1.2rem;
@@ -15,6 +39,7 @@ header{
     margin-bottom: 1.2rem;
 }
 
+/* HOME */
 .h1-home{
     padding: 23px;
 }
@@ -42,6 +67,7 @@ header{
     width: auto;
 }
 
+/* MENU */
 #menu{
     list-style-type: none;
     display: none;
@@ -64,16 +90,7 @@ header{
     color: #000;
 }
 
-main{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-}
-
+/* APRESENTAÇÃO HOME */
 .apresentacao-home{
     background-color: #ff5959;
     border: solid 2px #000;
@@ -101,13 +118,9 @@ main{
     padding: 10px;
 }
 
-.footer{
+/* FOOTER FIXO NO FUNDO */
+footer {
     background-color: #000;
-    height: 85px;
-    padding: 2px;
-}
-
-.paragrafo-footer{
     color: #faf9f9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -115,6 +128,7 @@ main{
     font-size: 0.8em;
 }
 
+/* BOTÕES MENU */
 #botaoMenu, #botaoFechar{
     font-size: 3rem;
     position: absolute;
@@ -141,6 +155,7 @@ main{
         position: fixed;
         width: 100%;
         z-index: 999;
+        top: 0;
     }
 
     #menu{
@@ -241,13 +256,15 @@ main{
     }
 
     .apresentacao-sobre{
-        width: 65rem;
+        width: 100%;
+        max-width: 65rem;
         background-color: #ff5959;
         margin: 20px;
     }
 
     .paragrafo-sobre-2{
-        width: 60rem;
+        width: 100%;
+        max-width: 65rem;
         text-align: left;
 }
 
@@ -255,11 +272,29 @@ main{
 
 /* PÁGINA AMBIENTE */
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .h1-ambiente{
     padding: 23px;
 }
 .main-ambiente p{
     margin: 20px;
+}
+
+.apresentacao-home,
+.apresentacao-sobre,
+.paragrafo-sobre-2,
+.sobre-ambiente,
+.sobre-ambiente-2 {
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    word-break: break-word;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
 }
 
 .sobre-ambiente{
@@ -390,22 +425,34 @@ main{
     }
 
     .cardapio{
-        margin-left: 40px;
+        margin: 0; /* remove margem individual que desloca os cards */
         width: 400px;
         height: 530px;
-        margin-top: -340px;
         text-align: left;
     }
 
     .cardapio-geral{
        display: flex;
        flex-direction: row;
-       margin-left: 20px;
+       flex-wrap: wrap; /* permite que os cards se ajustem automaticamente */
+       justify-content: center; /* centraliza os cards */
+       gap: 40px; /* espaço entre os cards */
+       margin-left: 0; /* remove margens que deslocam */
     }
 
     .imagens-cardapio{
-        margin-top: 35px;
-        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* espaço entre grupos de imagens */
+        margin: 40px 0; /* espaçamento superior/inferior */
+    }
+
+    .trio-img-1,
+    .trio-img-2{
+        display: flex;
+        justify-content: center;
+        gap: 15px; /* espaço entre imagens do trio */
     }
 
     .img-cardapio-1{
@@ -414,7 +461,8 @@ main{
     }
 
     .ultima-imagem-cardapio{
-        width: 450px;
+        align-self: center; /* centraliza a última imagem */
+        margin-top: 20px;
     }
 
 
@@ -424,27 +472,34 @@ main{
         margin: 15px;
     }
 }
-/* PÁGINA LOCALIZAÇÃO */
 
+/* PÁGINA LOCALIZAÇÃO */
 .h1-localizacao{
     padding: 23px;
+    text-align: center;
 }
 
 .mapa{
     width: 440px;
     height: 400px;
     margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* centraliza o mapa */
 }
 
 .paragrafo-localizacao{
     background-color: #ff5959;
-    height: 70px;
-    margin-bottom: 20px;
+    height: auto; /* ajusta altura automaticamente ao conteúdo */
+    max-width: 440px;
+    margin: 0 auto 20px auto; /* centraliza e adiciona espaçamento inferior */
     border-radius: 4px;
 }
 
 .paragrafo-localizacao p{
     padding: 15px;
+    margin: 0;
+    word-wrap: break-word; /* evita que o texto quebre fora do fundo */
 }
 
 /* BREAKPOINT DESKTOP - PÁGINA LOCALIZAÇÃO */
@@ -452,13 +507,29 @@ main{
     .h1-localizacao{
         margin-top: 140px;
     }
+
     .mapa{
         width: 880px;
         height: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; /* centraliza o mapa no desktop */
+    }
+
+    .paragrafo-localizacao{
+        max-width: 880px;
+        margin: 0 auto 20px auto; /* centraliza o bloco */
     }
 
     .paragrafo-localizacao p{
         padding: 18px;
+        margin: 0;
+    }
+
+    /* Evita scroll horizontal no desktop */
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
 
