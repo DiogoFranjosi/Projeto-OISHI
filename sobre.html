@@ -4,79 +4,370 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-
-        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
-
-    <link rel="shortcut icon" href="imagens/icons8-símbolo-de-comida-não-vegetariana-96.png" type="image/x-icon">
-
-
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- CSS Personalizado -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Sobre</title>
+    
+    <title>Sobre Nós - OISHI | Experiência Japonesa Autêntica</title>
 </head>
 
 <body>
-    <span id="botaoMenu" class="material-symbols-rounded" onclick="exibirMenu()">menu</span>
-    <span id="botaoFechar" class="material-symbols-rounded" onclick="fecharMenu()">close</span>
-
+    <!-- Navigation -->
     <header>
-        <img class="logo" src="imagens/logo_oishi.jpg" alt="Logotipo">
-        <nav>
-            <ul id="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-                <li><a href="ambiente.html">AMBIENTE</a></li>
-                <li><a href="cardapio.html">CARDÁPIO</a></li>
-                <li><a href="localizacao.html">LOCALIZAÇÃO</a></li>
-                <li><a href="reserva.html">RESERVA</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-oishi fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagens/logo_oishi.jpg" alt="Logotipo OISHI">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOishi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarOishi">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="sobre.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ambiente.html">AMBIENTE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cardapio.html">CARDÁPIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="localizacao.html">LOCALIZAÇÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserva.html">RESERVA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="main-sobre">
-        <h1 class="h1-sobre">SOBE O OISHI</h1>
-        <div class="sobre-nos">
-            <img class="img-2" src="imagens/pratos3.jpg" alt="">
-        <div class="apresentacao-sobre">
-            <p>OISHI é um restaurante japonês que oferece uma experiência gastronômica única. Com pratos típicos da culinária japonesa, o OISHI é o lugar perfeito para quem busca uma refeição autêntica e saborosa.</p>
-            <p>O restaurante é conhecido por sua decoração elegante e ambiente acolhedor, que proporciona uma experiência agradável para todos os clientes.</p>
-            <p>Além disso, o OISHI conta com uma equipe de chefs experientes e talentosos que preparam cada prato com cuidado e atenção aos detalhes. Se você está procurando um restaurante japonês de alta qualidade, o OISHI é a escolha certa.</p>
+    <!-- Hero Sobre -->
+    <section class="hero-sobre">
+        <div class="container">
+            <div class="row align-items-center min-vh-60">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="hero-title mb-4">Nossa História</h1>
+                    <p class="hero-subtitle">Tradição, Excelência e Paixão pela Culinária Japonesa</p>
+                </div>
+            </div>
         </div>
-        </div>
+    </section>
 
-        <div class="paragrafo-sobre-2">
-            <p> O OISHI combina tradição e modernidade, qualidade e sabor, conforto e elegância. É o lugar ideal para quem quer desfrutar de uma refeição deliciosa e saudável, em um ambiente aconchegante e refinado.
-        
-                <p>Contamos com uma área reservada para eventos especiais, como aniversários, reuniões ou confraternizações.</p>
-        
-                <p>O espaço é amplo e confortável, com capacidade para até 50 pessoas. Há um telão, um sistema de som e um microfone para apresentações ou discursos.</p>
-        
-                <p>Oferecemos pacotes personalizados de acordo com o número de convidados, o tipo de comida e a ocasião.</p>
+    <!-- Nossa Jornada -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="sobre-content">
+                        <span class="badge-oishi mb-3">Desde 2015</span>
+                        <h2 class="mb-4">A Essência OISHI</h2>
+                        <p class="lead mb-4">O OISHI nasceu da paixão por compartilhar a autêntica culinária japonesa com São Paulo, combinando tradição milenar com inovação contemporânea.</p>
+                        
+                        <div class="sobre-features">
+                            <div class="feature-item d-flex mb-4">
+                                <span class="material-symbols-rounded text-oishi-red me-3">restaurant</span>
+                                <div>
+                                    <h5>Ingredientes Premium</h5>
+                                    <p class="text-muted mb-0">Selecionamos os melhores ingredientes diretamente do Japão e produtores locais certificados.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex mb-4">
+                                <span class="material-symbols-rounded text-oishi-red me-3">chef</span>
+                                <div>
+                                    <h5>Chefs Especializados</h5>
+                                    <p class="text-muted mb-0">Nossa equipe possui treinamento internacional e anos de experiência na arte culinária japonesa.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex">
+                                <span class="material-symbols-rounded text-oishi-red me-3">eco</span>
+                                <div>
+                                    <h5>Sustentabilidade</h5>
+                                    <p class="text-muted mb-0">Comprometidos com práticas sustentáveis e respeito ao meio ambiente em toda nossa operação.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="sobre-image">
+                        <img src="imagens/pratos3.jpg" alt="Chef OISHI preparando sushi" class="img-fluid rounded shadow-large">
+                        <div class="experience-badge">
+                            <span class="years">+10</span>
+                            <span class="text">Anos de Excelência</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <span class="badge-oishi mb-3">Diferenciais</span>
+                <h2>O Que Nos Torna Únicos</h2>
+                <p class="lead">Excelência em cada detalhe da experiência OISHI</p>
+            </div>
             
-                <p>Nosso atendimento é cordial e eficiente, com garçons simpáticos, altamente treinados e atenciosos. Eles estão sempre prontos para tirar dúvidas, fazer sugestões e atender aos pedidos dos clientes.
-        
-                <p>O serviço é rápido e preciso, sem demoras ou erros. Os clientes são recebidos com um sorriso e um cumprimento em japonês, e se despedem com um agradecimento e um desejo de volta sempre.</p>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="differential-card text-center">
+                        <div class="differential-icon">
+                            <span class="material-symbols-rounded">verified</span>
+                        </div>
+                        <h4>Autenticidade</h4>
+                        <p class="text-muted">Técnicas tradicionais japonesas preservadas e respeitadas em cada preparo.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="differential-card text-center">
+                        <div class="differential-icon">
+                            <span class="material-symbols-rounded">local_florist</span> </div>
+                        <h4>Frescor Garantido</h4>
+                        <p class="text-muted">Ingredientes entregues diariamente, garantindo qualidade e superioridade.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="differential-card text-center">
+                        <div class="differential-icon">
+                            <span class="material-symbols-rounded">diamond</span>
+                        </div>
+                        <h4>Experiência Premium</h4>
+                        <p class="text-muted">Ambiente sofisticado e atendimento personalizado para momentos especiais.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="differential-card text-center">
+                        <div class="differential-icon">
+                            <span class="material-symbols-rounded">lightbulb</span> </div>
+                        <h4>Inovação Constante</h4>
+                        <p class="text-muted">Criações exclusivas que reinventam a culinária japonesa com toque contemporâneo.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="differential-card text-center">
+                        <div class="differential-icon">
+                            <span class="material-symbols-rounded">groups</span>
+                        </div>
+                        <h4>Compromisso Social</h4>
+                        <p class="text-muted">Envolvimento com a comunidade e apoio a produtores locais.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="differential-card text-center">
+                        <div class="differential-icon">
+                            <span class="material-symbols-rounded">celebration</span>
+                        </div>
+                        <h4>Eventos Exclusivos</h4>
+                        <p class="text-muted">Espaço dedicado para celebrações especiais com atendimento personalizado.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
 
-    <footer>
-        <div class="footer">
-            <div class="paragrafo-footer">
-                <p>2023 - OISHI - TODOS OS DIREITOS SÃO RESERVADOS.</p>
-                <p>Desenvolvido por Diogo Franjosi Dias</p>
+    <!-- Nossa Equipe -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <span class="badge-oishi mb-3">Equipe</span>
+                <h2>Conheça Nossos Chefs</h2>
+                <p class="lead">Profissionais apaixonados pela arte da culinária japonesa</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center">
+                        <div class="team-image">
+                            <img src="imagens/Chef - Takashi Yamamoto.jpg" alt="Chef Takashi Yamamoto" class="img-fluid">
+                        </div>
+                        <div class="team-info">
+                            <h4>Takashi Yamamoto</h4>
+                            <p class="text-oishi-red mb-2">Chef Executivo</p>
+                            <p class="text-muted small">15 anos de experiência em Tóquio e São Paulo. Especialista em kaiseki.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center">
+                        <div class="team-image">
+                            <img src="imagens/Chef - Yuki Tanaka.jpg" alt="Chef Yuki Tanaka" class="img-fluid">
+                        </div>
+                        <div class="team-info">
+                            <h4>Yuki Tanaka</h4>
+                            <p class="text-oishi-red mb-2">Sushi Master</p>
+                            <p class="text-muted small">Mestre em técnicas de sushi com formação em Osaka. 12 anos de tradição.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card text-center">
+                        <div class="team-image">
+                            <img src="imagens/Chef - Kenji Sato.jpg" alt="Chef Kenji Sato" class="img-fluid">
+                        </div>
+                        <div class="team-info">
+                            <h4>Kenji Sato</h4>
+                            <p class="text-oishi-red mb-2">Chef de Cozinha Quente</p>
+                            <p class="text-muted small">Especialista em teppanyaki e pratos quentes tradicionais. 10 anos de carreira.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Missão, Visão e Valores -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <span class="material-symbols-rounded">target</span>
+                        </div>
+                        <h3>Missão</h3>
+                        <p class="text-muted">Proporcionar experiências gastronômicas memoráveis através da autêntica culinária japonesa, unindo tradição e inovação com excelência em cada detalhe.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <span class="material-symbols-rounded">visibility</span>
+                        </div>
+                        <h3>Visão</h3>
+                        <p class="text-muted">Ser referência em gastronomia japonesa no Brasil, reconhecido pela qualidade, inovação e compromisso com a satisfação total dos nossos clientes.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <span class="material-symbols-rounded">handshake</span> </div>
+                        <h3>Valores</h3>
+                        <p class="text-muted">Autenticidade, Excelência, Respeito, Inovação e Sustentabilidade. Princípios que guiam cada decisão e ação no OISHI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section-padding bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-3">Pronto para viver a experiência OISHI?</h2>
+                    <p class="lead mb-0">Faça sua reserva e descubra por que somos referência em culinária japonesa.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="reserva.html" class="btn-oishi">
+                        <span class="material-symbols-rounded align-middle me-2">restaurant</span>
+                        Fazer Reserva
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-oishi">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="imagens/logo_oishi.jpg" alt="OISHI" class="mb-3" height="50">
+                    <p class="mb-3">Oferecendo a mais autêntica experiência da culinária japonesa em São Paulo desde 2015.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white">
+                            <span class="material-symbols-rounded">facebook</span>
+                        </a>
+                        <a href="#" class="text-white">
+                            <span class="material-symbols-rounded">instagram</span>
+                        </a>
+                        <a href="#" class="text-white">
+                            <span class="material-symbols-rounded">maps</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="text-white mb-3">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="ambiente.html">Ambiente</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-3">Contato</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <span class="material-symbols-rounded align-middle me-2">location_on</span>
+                            Av. Paulista, 456 - São Paulo
+                        </li>
+                        <li class="mb-2">
+                            <span class="material-symbols-rounded align-middle me-2">call</span>
+                            (11) 6666-1234
+                        </li>
+                        <li class="mb-2">
+                            <span class="material-symbols-rounded align-middle me-2">mail</span>
+                            contato@oishi.com.br
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-3">Horários</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Segunda - Sexta: 11h às 15h | 18h às 23h</li>
+                        <li class="mb-2">Sábados: 11h às 16h | 18h às 00h</li>
+                        <li class="mb-2">Domingos: 11h às 17h</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 OISHI. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Desenvolvido por Diogo Franjosi Dias</p>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script Personalizado -->
+    <script src="js/sobre.js"></script>
 </body>
 
 </html>
