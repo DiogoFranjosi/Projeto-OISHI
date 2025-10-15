@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Localização - OISHI | Restaurante Japonês Premium</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-oishi fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagens/logo_oishi.jpg" alt="Logotipo OISHI">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOishi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarOishi">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ambiente.html">AMBIENTE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cardapio.html">CARDÁPIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="localizacao.html">LOCALIZAÇÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserva.html">RESERVA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Localização -->
+    <section class="hero-localizacao">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="hero-title mb-4">Nossa Localização</h1>
+                    <p class="hero-subtitle">Encontre-nos no coração de São Paulo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa e Informações -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <!-- Mapa Interativo -->
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <div class="location-map-container">
+                        <div class="map-header">
+                            <h3 class="mb-3">📍 Estamos Aqui</h3>
+                            <p class="text-muted">Avenida Paulista, 456 - Bela Vista, São Paulo</p>
+                        </div>
+                        <div class="ratio ratio-16x9 map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0052267717606!2d-46.65052582466937!3d-23.568255761845545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bec217d899%3A0x3f6b2a8a89778b67!2sAv.%20Paulista%2C%20456%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-000!5e0!3m2!1spt-BR!2sbr!4v1693752321626!5m2!1spt-BR!2sbr"
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                class="location-map">
+                            </iframe>
+                        </div>
+                        <div class="map-actions mt-5">
+                            <a href="https://maps.google.com/?q=Av.+Paulista,+456+-+Bela+Vista,+Sao+Paulo+-+SP" target="_blank" class="btn-oishi-outline btn-sm">
+                                <span class="material-symbols-rounded align-middle me-2">open_in_new</span>
+                                Abrir no Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Informações de Contato -->
+                <div class="col-lg-4">
+                    <div class="location-info-card">
+                        <div class="card-header">
+                            <h4 class="mb-0">📞 Informações</h4>
+                        </div>
+                        <div class="card-body">
+                            <!-- Endereço -->
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <span class="material-symbols-rounded">location_on</span>
+                                </div>
+                                <div class="info-content">
+                                    <h6>Endereço</h6>
+                                    <p>Avenida Paulista, 456<br>Bela Vista<br>São Paulo - SP<br>CEP: 01310-000</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Telefone -->
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <span class="material-symbols-rounded">call</span>
+                                </div>
+                                <div class="info-content">
+                                    <h6>Telefone</h6>
+                                    <p>(11) 6666-1234</p>                                  
+                                </div>
+                            </div>
+                            
+                            <!-- Horário -->
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <span class="material-symbols-rounded">schedule</span>
+                                </div>
+                                <div class="info-content">
+                                    <h6>Horário de Funcionamento</h6>
+                                    <div class="schedule-times">
+                                        <div class="schedule-item">
+                                            <span class="days">Segunda - Sexta</span>
+                                            <span class="hours">11h às 15h | 18h às 23h</span>
+                                        </div>
+                                        <div class="schedule-item">
+                                            <span class="days">Sábados</span>
+                                            <span class="hours">11h às 16h | 18h às 00h</span>
+                                        </div>
+                                        <div class="schedule-item">
+                                            <span class="days">Domingos</span>
+                                            <span class="hours">11h às 17h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços e Comodidades -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Serviços Disponíveis</h2>
+                <p class="lead">Tudo para sua melhor experiência</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <span class="material-symbols-rounded">local_parking</span>
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Estacionamento</h4>
+                            <p class="text-muted">Estacionamento conveniado a 50m com valet service e preço especial para clientes OISHI.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <span class="material-symbols-rounded">accessible</span>
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Acessibilidade</h4>
+                            <p class="text-muted">Ambiente 100% acessível com rampas, elevadores e banheiros adaptados para cadeirantes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <span class="material-symbols-rounded">delivery_dining</span>
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Delivery</h4>
+                            <p class="text-muted">Entregamos em toda região da Av. Paulista através do nosso app exclusivo e parceiros.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <span class="material-symbols-rounded">wifi</span>
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Wi-Fi Grátis</h4>
+                            <p class="text-muted">Internet de alta velocidade gratuita para todos os clientes durante sua estadia.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <span class="material-symbols-rounded">family_restroom</span>
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Área Familiar</h4>
+                            <p class="text-muted">Espaço especial para famílias com crianças, incluindo cadeirinhas e cardápio kids.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <span class="material-symbols-rounded">event_available</span>
+                        </div>
+                        <div class="amenity-content">
+                            <h4>Eventos</h4>
+                            <p class="text-muted">Salão privativo para eventos corporativos e celebrações especiais com capacidade para 50 pessoas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Reserva -->
+    <section class="section-padding bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-3">Encontrou o caminho?</h2>
+                    <p class="lead mb-0">Faça sua reserva agora e garanta sua experiência OISHI.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="reserva.html" class="btn-oishi">
+                        <span class="material-symbols-rounded align-middle me-2">restaurant</span>
+                        Fazer Reserva
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-oishi">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="imagens/logo_oishi.jpg" alt="OISHI" class="mb-3" height="50">
+                    <p class="mb-3">Oferecendo a mais autêntica experiência da culinária japonesa em São Paulo desde 2015.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white">
+                            <span class="material-symbols-rounded">facebook</span>
+                        </a>
+                        <a href="#" class="text-white">
+                            <span class="material-symbols-rounded">instagram</span>
+                        </a>
+                        <a href="#" class="text-white">
+                            <span class="material-symbols-rounded">maps</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="text-white mb-3">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="ambiente.html">Ambiente</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-3">Contato</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <span class="material-symbols-rounded align-middle me-2">location_on</span>
+                            Av. Paulista, 456 - São Paulo
+                        </li>
+                        <li class="mb-2">
+                            <span class="material-symbols-rounded align-middle me-2">call</span>
+                            (11) 6666-1234
+                        </li>
+                        <li class="mb-2">
+                            <span class="material-symbols-rounded align-middle me-2">mail</span>
+                            contato@oishi.com.br
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-3">Horários</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Segunda - Sexta: 11h às 15h | 18h às 23h</li>
+                        <li class="mb-2">Sábados: 11h às 16h | 18h às 00h</li>
+                        <li class="mb-2">Domingos: 11h às 17h</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 OISHI. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Desenvolvido por Diogo Franjosi Dias</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script Personalizado -->
+    <script src="js/localizacao.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>OISHI - Experiência Japonesa Autêntica</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-oishi fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagens/logo_oishi.jpg" alt="Logotipo OISHI">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOishi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarOishi">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ambiente.html">AMBIENTE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cardapio.html">CARDÁPIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="localizacao.html">LOCALIZAÇÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserva.html">RESERVA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content fade-in-up">
+                        <h1 class="hero-title">OISHI</h1>
+                        <h2 class="hero-subtitle">Autenticidade Japonesa em Cada Detalhe</h2>
+                        <p class="lead text-light mb-4">Descubra a verdadeira essência da culinária japonesa em um ambiente sofisticado, onde tradição e inovação se encontram.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="reserva.html" class="btn-oishi">
+                                <span class="material-symbols-rounded align-middle me-2">restaurant</span>
+                                Fazer Reserva
+                            </a>
+                            <a href="cardapio.html" class="btn-oishi-outline text-white border-white">
+                                Ver Cardápio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image float">
+                        <img src="imagens/destaque-home3.jpg" alt="Sushi Premium" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <span class="badge-oishi mb-3">Por que nos escolher</span>
+                <h2>Excelência em Cada Experiência</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-oishi text-center h-100">
+                        <div class="card-body p-4">
+                            <span class="material-symbols-rounded display-4 gradient-text mb-3">restaurant</span>
+                            <h4 class="card-title">Ingredientes Premium</h4>
+                            <p class="card-text">Selecionamos os melhores ingredientes frescos diretamente do Japão para garantir autenticidade e sabor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-oishi text-center h-100">
+                        <div class="card-body p-4">
+                            <span class="material-symbols-rounded display-4 gradient-text mb-3">chef</span>
+                            <h4 class="card-title">Chefs Especializados</h4>
+                            <p class="card-text">Nossos chefs possuem treinamento no Japão e anos de experiência na arte da culinária japonesa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-oishi text-center h-100">
+                        <div class="card-body p-4">
+                            <span class="material-symbols-rounded display-4 gradient-text mb-3">diamond</span>
+                            <h4 class="card-title">Ambiente Sofisticado</h4>
+                            <p class="card-text">Desfrute de uma atmosfera elegante que combina design contemporâneo com elementos tradicionais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <span class="badge-oishi mb-3">Destaques</span>
+                <h2>Especialidades da Casa</h2>
+                <p class="lead">Nossos pratos mais requisitados pelos clientes</p>
+            </div>
+            <div class="row g-4 menu-cards">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-oishi menu-card h-100">
+                        <img src="imagens/combinado1.jpg" class="card-img-top" alt="Sashimi Premium">
+                        <div class="card-body">
+                            <h5 class="card-title">Sashimi Premium</h5>
+                            <p class="card-text">Cortes finos de peixe fresco selecionado, servido com wasabi e shoyu artesanal. Uma experiência de sabores puros.</p>
+                            <div class="card-footer">
+                                <div class="price-action">
+                                    <span class="price">R$ 89,90</span>
+                                    <button class="btn-oishi btn-sm">
+                                        <span class="material-symbols-rounded align-middle me-1">shopping_cart</span>
+                                        Pedir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-oishi menu-card h-100">
+                        <img src="imagens/combinado2.jpg" class="card-img-top" alt="Combinado Oishi">
+                        <div class="card-body">
+                            <h5 class="card-title">Combinado Oishi</h5>
+                            <p class="card-text">Seleção especial com 30 peças incluindo nigiris, sushis e rolls exclusivos. Perfeito para compartilhar.</p>
+                            <div class="card-footer">
+                                <div class="price-action">
+                                    <span class="price">R$ 129,90</span>
+                                    <button class="btn-oishi btn-sm">
+                                        <span class="material-symbols-rounded align-middle me-1">shopping_cart</span>
+                                        Pedir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-oishi menu-card h-100">
+                        <img src="imagens/combinado3.jpg" class="card-img-top" alt="Tempura Misto">
+                        <div class="card-body">
+                            <h5 class="card-title">Tempura Misto</h5>
+                            <p class="card-text">Crocante tempura de camarão e legumes frescos com molho tentsuyu. Textura perfeita e sabor inigualável.</p>
+                            <div class="card-footer">
+                                <div class="price-action">
+                                    <span class="price">R$ 67,90</span>
+                                    <button class="btn-oishi btn-sm">
+                                        <span class="material-symbols-rounded align-middle me-1">shopping_cart</span>
+                                        Pedir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-oishi menu-card h-100">
+                        <img src="imagens/pratos1.jpg" class="card-img-top" alt="Yakitori Especial">
+                        <div class="card-body">
+                            <h5 class="card-title">Yakitori Especial</h5>
+                            <p class="card-text">Espetinhos grelhados no carvão com molho teriyaki secreto da casa. Acompanha legumes grelhados.</p>
+                            <div class="card-footer">
+                                <div class="price-action">
+                                    <span class="price">R$ 54,90</span>
+                                    <button class="btn-oishi btn-sm">
+                                        <span class="material-symbols-rounded align-middle me-1">shopping_cart</span>
+                                        Pedir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="cardapio.html" class="btn-oishi-outline no-underline">
+                    Ver Cardápio Completo
+                    <span class="material-symbols-rounded align-middle ms-2">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-3">Pronto para uma experiência inesquecível?</h2>
+                    <p class="lead mb-0">Reserve sua mesa agora e garante 10% de desconto na primeira visita.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="reserva.html" class="btn-oishi">
+                        <span class="material-symbols-rounded align-middle me-2">restaurant</span>
+                        Fazer Reserva
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-oishi">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="imagens/logo_oishi.jpg" alt="OISHI" class="mb-3" height="50">
+                    <p class="mb-3">Oferecendo a mais autêntica experiência da culinária japonesa em São Paulo desde 2015.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white">
+                            <span class="material-symbols-rounded">facebook</span>
+                        </a>
+                        <a href="#" class="text-white">
+                            <span class="material-symbols-rounded">instagram</span>
+                        </a>
+                        <a href="#" class="text-white">
+                            <span class="material-symbols-rounded">maps</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="text-white mb-3">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="ambiente.html">Ambiente</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-3">Contato</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <span class="material-symbols-rounded align-middle me-2">location_on</span>
+                            Av. Paulista, 456 - São Paulo
+                        </li>
+                        <li class="mb-2">
+                            <span class="material-symbols-rounded align-middle me-2">call</span>
+                            (11) 6666-1234
+                        </li>
+                        <li class="mb-2">
+                            <span class="material-symbols-rounded align-middle me-2">mail</span>
+                            contato@oishi.com.br
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-3">Horários</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Segunda - Sexta: 11h às 15h | 18h às 23h</li>
+                        <li class="mb-2">Sábados: 11h às 16h | 18h às 00h</li>
+                        <li class="mb-2">Domingos: 11h às 17h</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 OISHI. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Desenvolvido por Diogo Franjosi Dias</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script Personalizado -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
